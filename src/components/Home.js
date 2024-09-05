@@ -29,7 +29,11 @@ const Home = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex flex-col justify-center items-center min-h-screen">
+      {/* Heading */}
+      <h1 className="text-4xl font-bold text-indigo-600 mb-6">Hello There</h1>
+
+      {/* Carousel Container */}
       <div className="relative w-full max-w-screen-lg">
         {/* Left Arrow Button */}
         <button
@@ -39,7 +43,7 @@ const Home = () => {
           &lt;
         </button>
 
-        {/* Carousel Container */}
+        {/* Carousel Slides */}
         <div className="relative w-full overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
